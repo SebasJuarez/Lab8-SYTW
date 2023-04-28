@@ -15,12 +15,12 @@ module.exports = {
         filename: "[name].css"
     }),
     new HtmlWebpackPlugin({
-        template: './src/reactApp/index.html',
+        template: './src/index.html',
         filename: 'index.html',
         Chunks: ['index']
     })
 ],
-devserver: {
+devServer: {
     port: 3000,
 },
 
@@ -33,7 +33,19 @@ devserver: {
             loader: "babel-loader",
           },
           
-        }
+        },
+        {
+            test: /\.(png|jpe?g|gif)$/i,
+            use: [
+              {
+                loader: 'file-loader',
+              },
+            ],
+          },
+          {
+            test: /\.(sa|sc|c)ss$/, 
+            use: ["style-loader", "css-loader", "sass-loader"],
+          }
       ]
     }
   }

@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "builddev": "webpack --mode development",
+    "start": "webpack serve --config webpack.config.js",
     "start-webpack": "webpack"
   },
   "author": "",
@@ -25,8 +26,12 @@
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
+    "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2"
   }
 }

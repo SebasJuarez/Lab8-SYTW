@@ -1,0 +1,53 @@
+
+body{
+    background-image: url('https://whatifgaming.com/wp-content/uploads/2021/11/Genshin-Impact-by-Mihoyo-1024x576.jpg');
+    background-size: cover;
+  }
+  h1 {
+    color: #000000;
+    font-size: 50px;
+    font-family: 'Hanyi WenHei 85W (Extra Bold)', monospace;
+    text-shadow: 1px 1px 0 #fff, 
+               -1px -1px 0 #fff, 
+               1px -1px 0 #fff, 
+               -1px 1px 0 #fff;
+  }
+  
+  h2 {
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Hanyi WenHei 85W (Extra Bold)', monospace;
+  }
+  
+  .cardGrid {
+    background-color: rgb(11, 129, 88);
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .restartButton {
+      background-color:#000000;
+      border-radius:28px;
+      border:3px solid #ffffff;
+      display:inline-block;
+    color: #ffffff;
+      cursor:pointer;
+      font-family: 'Hanyi WenHei 85W (Extra Bold)', monospace;
+      font-size:15px;
+      padding:5px 10px;
+      
+  }
+  
+  .restartButton:hover {
+      background-color:#686868;
+  }
+  
